@@ -116,7 +116,7 @@ def inspect_ip(ipprot):
 
     url = 'http://118.24.61.204/ip'
     url = 'https://weibo.com/u/7230522444?is_all=1'
-    # url = 'https://www.douban.com/group/638298/discussion?start=25'
+    url = 'https://www.douban.com/group/638298/discussion?start=25'
     # url = 'https://www.baidu.com'
     proxy = {'http': str(ipprot), 'https': str(ipprot)}
     try:
