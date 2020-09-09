@@ -115,6 +115,7 @@ def inspect_ip(ipprot):
     time.sleep(1)
 
     url = 'http://118.24.61.204/ip'
+    url = 'https://weibo.com/u/7230522444?is_all=1'
     # url = 'https://www.douban.com/group/638298/discussion?start=25'
     # url = 'https://www.baidu.com'
     proxy = {'http': str(ipprot), 'https': str(ipprot)}
@@ -208,7 +209,7 @@ if __name__ == '__main__':
         # # 关闭连接
         # cursor.close()
         # conn.close()
-    # IPList_61()
+    #IPList_61()
     IPList_jxl()
     # inspect_ip('105.27.238.166:80')
     # update_proxy('105.27.238.166:80')
