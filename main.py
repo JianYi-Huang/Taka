@@ -22,7 +22,7 @@ config = get_config("mysql")
 # 连接database
 conn = pymysql.connect(
     host = '118.24.61.204',
-    user = 'root',
+    user = 'HuangJianYi',
     password = config['password'],
     database = 'proxies',
     charset = 'utf8')
@@ -167,10 +167,9 @@ def IPList_61():
         time.sleep(1)
 
 def IPList_jxl():
-    proxy = {'http': '83.97.23.90:18080', 'https': '83.97.23.90:18080'}
     for q in range(1,8):
         url = 'https://ip.jiangxianli.com/?page='+str(q)
-        html = requests.get(url, headers=header, proxies=proxy)
+        html = requests.get(url, headers=header)
         # html = requests.get(url, headers=header)
         html.encoding = 'utf-8'
         if html != None:
